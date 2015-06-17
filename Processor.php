@@ -2639,7 +2639,7 @@ class Processor
                     }
                 }
 
-                if (true === $defaultFound || true === $omitDefaultFound) {
+                if (true === $defaultFound || true === $omitDefaultFound || $options->{'@omitDefault'}) {
                     continue;
                 } else {
                     // if no @default and @omitDefault found use null
@@ -2670,7 +2670,7 @@ class Processor
                     $validValue = clone $validValue;
                     $newOptions = clone $options;
                     unset($newOptions->{'@default'});
-                    unset($newOptions->{'@omitDefault'});
+                  //  unset($newOptions->{'@omitDefault'});
 
                     foreach (self::$framingKeywords as $keyword) {
                         if (property_exists($validValue, $keyword)) {
