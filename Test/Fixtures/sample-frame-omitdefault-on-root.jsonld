@@ -11,5 +11,12 @@
   },
   "@type": "t1",
   "@omitDefault": true,
-  "missing": {}
+  "missing": {
+    "@type":"t2",
+    "term3": {}
+  },
+  "term2": {
+    "@type": "t2",
+    "term4": {}
+  }
 }
