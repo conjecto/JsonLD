@@ -1,5 +1,5 @@
 {
-    "name": "ml/json-ld",
+    "name": "conjecto/json-ld",
     "type": "library",
     "description": "JSON-LD Processor for PHP",
     "keywords": [ "JSON-LD", "jsonld" ],
@@ -14,6 +14,9 @@
             "role": "Developer"
         }
     ],
+    "replace": {
+      "ml/json-ld"  : "1.*"
+    },
     "require": {
         "php": ">=5.3.0",
         "ext-json": "*",
